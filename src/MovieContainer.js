@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Container, Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from 'reactstrap';
 import MovieList from './components/MovieList';
 import MovieForm from './components/MovieForm';
 import './Movie.css'
@@ -25,18 +25,18 @@ const MovieContainer = () => {
                 icon= {faFilm}
                 color="#C82333"
                 size="5x"
-                className="Movie-icon"
+                className="movie-icon mb-3"
             />
 
             <h1>Movie App</h1>
 
-            <Button className="my-5 px-5" color="danger" onClick={toggle}>
+            <Button className="my-5 px-5 addBtn" color="danger" onClick={toggle}>
                 <FontAwesomeIcon
                     icon= {faPlus}
                     color="white"
                     size="lg"
                 />
-                Add new movie 
+                Add new movie
             </Button>
            
             <Modal isOpen={modal} toggle={toggle} >
@@ -46,7 +46,7 @@ const MovieContainer = () => {
                     <MovieForm addMovie = {addMovie}/>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="danger" onClick={toggle}>Cancel</Button>
+                    <Button color="warning" onClick={toggle}>Cancel</Button>
                 </ModalFooter>
             </Modal>
         

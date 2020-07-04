@@ -50,14 +50,14 @@ const MovieForm = ({addMovie}) => {
             <FormGroup row>
                 <Label for="rating" sm={2}>Rating</Label>
                 <Col sm={10}>
-                <Input type="select" name="rating" id="rating" onChange={handleSelect}>
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </Input>
+                    <Input type="select" name="rating" id="rating" onChange={handleSelect}>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </Input>
                 </Col>
             </FormGroup>
             <FormGroup row>
@@ -77,8 +77,8 @@ const MovieForm = ({addMovie}) => {
             </FormGroup>
             <FormGroup check row>
                 <Col sm={{ size: 10, offset: 2 }}>
-                <Button color="success">Submit</Button>
-                <button className="btn btn-primary" type="reset">Reset</button>
+                    <Button color="danger">Submit</Button>
+                    <button className="btn btn-secondary" type="reset">Reset</button>
                 </Col>
             </FormGroup>
         </Form>

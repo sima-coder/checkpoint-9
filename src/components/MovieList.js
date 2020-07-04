@@ -7,7 +7,7 @@ const MovieList = ({movies}) => {
         <Row>
             { movies.map(movie => ( 
             <MovieCard key={movie.id} 
-                movie={movie} 
+                        movie={movie} 
             /> )) }
         </Row>
     );

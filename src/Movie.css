@@ -18,7 +18,44 @@ h1{
     margin: 25px;
 }
 
+.btn{
+    margin-left: 5px;
+}
 
+.addBtn:hover{
+    background-color: transparent!important;
+    color:#C82333!important;
+}
+
+@-webkit-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+
+@keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+}
+.movie-icon:hover{
+    -webkit-animation: bounce 0.4s ease infinite alternate;
+    animation: bounce 0.4s ease infinite alternate;
+}
+
+.card:hover{
+    border: 3px solid #C82333;
+}
 
 
 
